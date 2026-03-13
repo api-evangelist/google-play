@@ -1,0 +1,184 @@
+openapi: 3.1.0
+info:
+  title: Google Play Developer API
+  description: >-
+    The Google Play Android Developer API allows developers to perform publishing
+    and app-management tasks. It provides access to app publishing workflows,
+    in-app product management, subscription handling, and purchase verification.
+  version: v3
+  contact:
+    name: Google
+    url: https://developers.google.com/android-publisher
+  license:
+    name: Google APIs Terms of Service
+    url: https://developers.google.com/terms
+servers:
+  - url: https://androidpublisher.googleapis.com
+    description: Google Play Developer API server
+paths:
+  /androidpublisher/v3/applications/{packageName}/edits:
+    post:
+      summary: Create a new edit
+      description: Creates a new edit for an app.
+      operationId: createEdit
+      parameters:
+        - name: packageName
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AppEdit'
+  /androidpublisher/v3/applications/{packageName}/inappproducts:
+    get:
+      summary: List in-app products
+      description: Lists all in-app products for a given app.
+      operationId: listInAppProducts
+      parameters:
+        - name: packageName
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InAppProductList'
+  /androidpublisher/v3/applications/{packageName}/purchases/products/{productId}/tokens/{token}:
+    get:
+      summary: Get purchase status
+      description: Checks the purchase and consumption status of an in-app item.
+      operationId: getPurchaseStatus
+      parameters:
+        - name: packageName
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: productId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: token
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProductPurchase'
+  /androidpublisher/v3/applications/{packageName}/purchases/subscriptionsv2/tokens/{token}:
+    get:
+      summary: Get subscription status
+      description: Gets the latest subscription purchase status.
+      operationId: getSubscriptionStatus
+      parameters:
+        - name: packageName
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: token
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SubscriptionPurchaseV2'
+components:
+  schemas:
+    AppEdit:
+      type: object
+      properties:
+        id:
+          type: string
+          description: The unique identifier of the edit.
+        expiryTimeSeconds:
+          type: string
+          description: The time at which the edit will expire.
+    InAppProduct:
+      type: object
+      properties:
+        packageName:
+          type: string
+        sku:
+          type: string
+        status:
+          type: string
+        purchaseType:
+          type: string
+        defaultPrice:
+          type: object
+          properties:
+            priceMicros:
+              type: string
+            currency:
+              type: string
+    InAppProductList:
+      type: object
+      properties:
+        inappproduct:
+          type: array
+          items:
+            $ref: '#/components/schemas/InAppProduct'
+    ProductPurchase:
+      type: object
+      properties:
+        purchaseState:
+          type: integer
+        consumptionState:
+          type: integer
+        developerPayload:
+          type: string
+        orderId:
+          type: string
+        purchaseType:
+          type: integer
+    SubscriptionPurchaseV2:
+      type: object
+      properties:
+        kind:
+          type: string
+        regionCode:
+          type: string
+        latestOrderId:
+          type: string
+        lineItems:
+          type: array
+          items:
+            type: object
+            properties:
+              productId:
+                type: string
+              expiryTime:
+                type: string
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://accounts.google.com/o/oauth2/auth
+          tokenUrl: https://oauth2.googleapis.com/token
+          scopes:
+            https://www.googleapis.com/auth/androidpublisher: Manage your Android apps
+security:
+  - oauth2:
+      - https://www.googleapis.com/auth/androidpublisher

@@ -1,0 +1,17 @@
+"@context":
+  "@vocab": https://schema.org/
+  gplay: https://developers.google.com/android-publisher/api-ref/rest/v3/
+  name: schema:name
+  description: schema:description
+  url: schema:url
+  packageName: gplay:packageName
+  sku: gplay:sku
+  purchaseState: gplay:purchaseState
+  consumptionState: gplay:consumptionState
+  orderId: gplay:orderId
+  subscriptionId: gplay:subscriptionId
+  expiryTime: gplay:expiryTime
+  productId: gplay:productId
+  priceMicros: gplay:priceMicros
+  currency: gplay:currency
+  regionCode: gplay:regionCode
