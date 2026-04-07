@@ -18,7 +18,7 @@ servers:
 paths:
   /androidpublisher/v3/applications/{packageName}/edits:
     post:
-      summary: Create a new edit
+      summary: Google Play Developer Create a new edit
       description: Creates a new edit for an app.
       operationId: createEdit
       parameters:
@@ -36,7 +36,7 @@ paths:
                 $ref: '#/components/schemas/AppEdit'
   /androidpublisher/v3/applications/{packageName}/inappproducts:
     get:
-      summary: List in-app products
+      summary: Google Play Developer List in-app products
       description: Lists all in-app products for a given app.
       operationId: listInAppProducts
       parameters:
@@ -54,7 +54,7 @@ paths:
                 $ref: '#/components/schemas/InAppProductList'
   /androidpublisher/v3/applications/{packageName}/purchases/products/{productId}/tokens/{token}:
     get:
-      summary: Get purchase status
+      summary: Google Play Developer Get purchase status
       description: Checks the purchase and consumption status of an in-app item.
       operationId: getPurchaseStatus
       parameters:
@@ -82,7 +82,7 @@ paths:
                 $ref: '#/components/schemas/ProductPurchase'
   /androidpublisher/v3/applications/{packageName}/purchases/subscriptionsv2/tokens/{token}:
     get:
-      summary: Get subscription status
+      summary: Google Play Developer Get subscription status
       description: Gets the latest subscription purchase status.
       operationId: getSubscriptionStatus
       parameters:
