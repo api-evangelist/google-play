@@ -34,6 +34,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/AppEdit'
+      tags:
+        - Androidpublisher
   /androidpublisher/v3/applications/{packageName}/inappproducts:
     get:
       summary: Google Play Developer List in-app products
@@ -52,6 +54,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/InAppProductList'
+      tags:
+        - Androidpublisher
   /androidpublisher/v3/applications/{packageName}/purchases/products/{productId}/tokens/{token}:
     get:
       summary: Google Play Developer Get purchase status
@@ -80,6 +84,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ProductPurchase'
+      tags:
+        - Androidpublisher
   /androidpublisher/v3/applications/{packageName}/purchases/subscriptionsv2/tokens/{token}:
     get:
       summary: Google Play Developer Get subscription status
@@ -103,6 +109,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/SubscriptionPurchaseV2'
+      tags:
+        - Androidpublisher
 components:
   schemas:
     AppEdit:
@@ -182,3 +190,5 @@ components:
 security:
   - oauth2:
       - https://www.googleapis.com/auth/androidpublisher
+tags:
+  - name: Androidpublisher

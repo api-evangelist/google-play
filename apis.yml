@@ -12,11 +12,11 @@ specificationVersion: '0.18'
 tags:
   - Android
   - Apps
+  - Google Play
+  - In-App Purchases
   - Mobile
   - Publishing
-  - In-App Purchases
   - Subscriptions
-  - Google Play
 apis:
   - name: Google Play Developer API
     description: >-
