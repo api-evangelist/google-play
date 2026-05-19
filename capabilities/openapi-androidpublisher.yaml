@@ -1,62 +1,67 @@
 naftiko: 1.0.0-alpha2
 info:
-  label: Google Play Developer API
-  description: The Google Play Android Developer API allows developers to perform publishing and app-management tasks. It
-    provides access to app publishing workflows, in-app product management, subscription handling, and purchase verification.
+  label: Google Play Developer API — Androidpublisher
+  description: 'Google Play Developer API — Androidpublisher. 4 operations. Lead operation: Google Play Developer Create a
+    new edit. Self-contained Naftiko capability covering one Google Play business surface.'
   tags:
-  - Google
-  - Play
-  - API
-  created: '2026-05-06'
-  modified: '2026-05-06'
+  - Google Play
+  - Androidpublisher
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    GOOGLE_PLAY_API_KEY: GOOGLE_PLAY_API_KEY
 capability:
   consumes:
   - type: http
-    namespace: google-play
+    namespace: openapi-androidpublisher
     baseUri: https://androidpublisher.googleapis.com
-    description: Google Play Developer API HTTP API.
-    authentication:
-      type: bearer
-      token: '{{GOOGLE_PLAY_TOKEN}}'
+    description: Google Play Developer API — Androidpublisher business capability. Self-contained, no shared references.
     resources:
-    - name: androidpublisher-v3-applications-packagename-edi
+    - name: androidpublisher-v3-applications-packageName-edits
       path: /androidpublisher/v3/applications/{packageName}/edits
       operations:
       - name: createedit
         method: POST
         description: Google Play Developer Create a new edit
-        inputParameters:
-        - name: packageName
-          in: path
-          type: string
-          required: true
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
-    - name: androidpublisher-v3-applications-packagename-ina
+        inputParameters:
+        - name: packageName
+          in: path
+          type: string
+          required: true
+    - name: androidpublisher-v3-applications-packageName-inappproducts
       path: /androidpublisher/v3/applications/{packageName}/inappproducts
       operations:
       - name: listinappproducts
         method: GET
         description: Google Play Developer List in-app products
-        inputParameters:
-        - name: packageName
-          in: path
-          type: string
-          required: true
         outputRawFormat: json
         outputParameters:
         - name: result
           type: object
           value: $.
-    - name: androidpublisher-v3-applications-packagename-pur
+        inputParameters:
+        - name: packageName
+          in: path
+          type: string
+          required: true
+    - name: androidpublisher-v3-applications-packageName-purchases-products-productId-tokens
       path: /androidpublisher/v3/applications/{packageName}/purchases/products/{productId}/tokens/{token}
       operations:
       - name: getpurchasestatus
         method: GET
         description: Google Play Developer Get purchase status
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
         inputParameters:
         - name: packageName
           in: path
@@ -70,17 +75,17 @@ capability:
           in: path
           type: string
           required: true
-        outputRawFormat: json
-        outputParameters:
-        - name: result
-          type: object
-          value: $.
-    - name: androidpublisher-v3-applications-packagename-pur
+    - name: androidpublisher-v3-applications-packageName-purchases-subscriptionsv2-tokens-to
       path: /androidpublisher/v3/applications/{packageName}/purchases/subscriptionsv2/tokens/{token}
       operations:
       - name: getsubscriptionstatus
         method: GET
         description: Google Play Developer Get subscription status
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
         inputParameters:
         - name: packageName
           in: path
@@ -90,48 +95,50 @@ capability:
           in: path
           type: string
           required: true
-        outputRawFormat: json
-        outputParameters:
-        - name: result
-          type: object
-          value: $.
+    authentication:
+      type: bearer
+      token: '{{env.GOOGLE_PLAY_API_KEY}}'
   exposes:
   - type: rest
+    namespace: openapi-androidpublisher-rest
     port: 8080
-    namespace: google-play-rest
-    description: REST adapter for Google Play Developer API.
+    description: REST adapter for Google Play Developer API — Androidpublisher. One Spectral-compliant resource per consumed
+      operation, prefixed with /v1.
     resources:
-    - path: /androidpublisher/v3/applications/{packageName}/edits
-      name: createedit
+    - path: /v1/androidpublisher/v3/applications/{packagename}/edits
+      name: androidpublisher-v3-applications-packagename-edits
+      description: REST surface for androidpublisher-v3-applications-packageName-edits.
       operations:
       - method: POST
         name: createedit
         description: Google Play Developer Create a new edit
-        call: google-play.createedit
+        call: openapi-androidpublisher.createedit
         with:
           packageName: rest.packageName
         outputParameters:
         - type: object
           mapping: $.
-    - path: /androidpublisher/v3/applications/{packageName}/inappproducts
-      name: listinappproducts
+    - path: /v1/androidpublisher/v3/applications/{packagename}/inappproducts
+      name: androidpublisher-v3-applications-packagename-inappproducts
+      description: REST surface for androidpublisher-v3-applications-packageName-inappproducts.
       operations:
       - method: GET
         name: listinappproducts
         description: Google Play Developer List in-app products
-        call: google-play.listinappproducts
+        call: openapi-androidpublisher.listinappproducts
         with:
           packageName: rest.packageName
         outputParameters:
         - type: object
           mapping: $.
-    - path: /androidpublisher/v3/applications/{packageName}/purchases/products/{productId}/tokens/{token}
-      name: getpurchasestatus
+    - path: /v1/androidpublisher/v3/applications/{packagename}/purchases/products/{productid}/tokens/{token}
+      name: androidpublisher-v3-applications-packagename-purchases-products-productid-tokens
+      description: REST surface for androidpublisher-v3-applications-packageName-purchases-products-productId-tokens.
       operations:
       - method: GET
         name: getpurchasestatus
         description: Google Play Developer Get purchase status
-        call: google-play.getpurchasestatus
+        call: openapi-androidpublisher.getpurchasestatus
         with:
           packageName: rest.packageName
           productId: rest.productId
@@ -139,13 +146,14 @@ capability:
         outputParameters:
         - type: object
           mapping: $.
-    - path: /androidpublisher/v3/applications/{packageName}/purchases/subscriptionsv2/tokens/{token}
-      name: getsubscriptionstatus
+    - path: /v1/androidpublisher/v3/applications/{packagename}/purchases/subscriptionsv2/tokens/{token}
+      name: androidpublisher-v3-applications-packagename-purchases-subscriptionsv2-tokens-to
+      description: REST surface for androidpublisher-v3-applications-packageName-purchases-subscriptionsv2-tokens-to.
       operations:
       - method: GET
         name: getsubscriptionstatus
         description: Google Play Developer Get subscription status
-        call: google-play.getsubscriptionstatus
+        call: openapi-androidpublisher.getsubscriptionstatus
         with:
           packageName: rest.packageName
           token: rest.token
@@ -153,95 +161,60 @@ capability:
         - type: object
           mapping: $.
   - type: mcp
+    namespace: openapi-androidpublisher-mcp
     port: 9090
-    namespace: google-play-mcp
     transport: http
-    description: MCP adapter for Google Play Developer API for AI agent use.
+    description: MCP adapter for Google Play Developer API — Androidpublisher. One tool per consumed operation, routed inline
+      through this capability's consumes block.
     tools:
-    - name: createedit
+    - name: google-play-developer-create-new
       description: Google Play Developer Create a new edit
       hints:
         readOnly: false
         destructive: false
         idempotent: false
-      call: google-play.createedit
+      call: openapi-androidpublisher.createedit
       with:
         packageName: tools.packageName
-      inputParameters:
-      - name: packageName
-        type: string
-        description: packageName
-        required: true
       outputParameters:
       - type: object
         mapping: $.
-    - name: listinappproducts
+    - name: google-play-developer-list-app
       description: Google Play Developer List in-app products
       hints:
         readOnly: true
         destructive: false
         idempotent: true
-      call: google-play.listinappproducts
+      call: openapi-androidpublisher.listinappproducts
       with:
         packageName: tools.packageName
-      inputParameters:
-      - name: packageName
-        type: string
-        description: packageName
-        required: true
       outputParameters:
       - type: object
         mapping: $.
-    - name: getpurchasestatus
+    - name: google-play-developer-get-purchase
       description: Google Play Developer Get purchase status
       hints:
         readOnly: true
         destructive: false
         idempotent: true
-      call: google-play.getpurchasestatus
+      call: openapi-androidpublisher.getpurchasestatus
       with:
         packageName: tools.packageName
         productId: tools.productId
         token: tools.token
-      inputParameters:
-      - name: packageName
-        type: string
-        description: packageName
-        required: true
-      - name: productId
-        type: string
-        description: productId
-        required: true
-      - name: token
-        type: string
-        description: token
-        required: true
       outputParameters:
       - type: object
         mapping: $.
-    - name: getsubscriptionstatus
+    - name: google-play-developer-get-subscription
       description: Google Play Developer Get subscription status
       hints:
         readOnly: true
         destructive: false
         idempotent: true
-      call: google-play.getsubscriptionstatus
+      call: openapi-androidpublisher.getsubscriptionstatus
       with:
         packageName: tools.packageName
         token: tools.token
-      inputParameters:
-      - name: packageName
-        type: string
-        description: packageName
-        required: true
-      - name: token
-        type: string
-        description: token
-        required: true
       outputParameters:
       - type: object
         mapping: $.
-binds:
-- namespace: env
-  keys:
-    GOOGLE_PLAY_TOKEN: GOOGLE_PLAY_TOKEN
