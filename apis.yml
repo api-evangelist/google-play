@@ -31,6 +31,8 @@ apis:
       - type: JSONLD
         url: json-ld/json-ld.yml
 common:
+  - type: AgenticAccess
+    url: agentic-access/google-play-agentic-access.yml
   - type: VulnerabilityDisclosure
     url: security/google-play-vulnerability-disclosure.yml
   - type: DomainSecurity
