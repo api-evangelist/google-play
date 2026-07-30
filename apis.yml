@@ -3,7 +3,20 @@ description: >-
   The Google Play Developer API allows developers to perform publishing and app-management tasks for Android
   applications. It includes the Publishing API for uploading and distributing apps, and the Subscriptions and In-App
   Purchases API for managing in-app products, subscriptions, and purchase verification.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/google-play.png
 url: https://raw.githubusercontent.com/api-evangelist/google-play/refs/heads/main/apis.yml
 created: '2026-03-13'
 modified: '2026-05-19'
@@ -17,19 +30,21 @@ tags:
   - Publishing
   - Subscriptions
 apis:
-  - name: Google Play Developer API
-    description: >-
-      The Google Play Android Developer API provides programmatic access to publishing and app-management tasks
-      including uploading APKs, managing in-app products, handling subscriptions, and verifying purchases.
-    humanURL: https://developers.google.com/android-publisher
-    baseURL: https://androidpublisher.googleapis.com
-    properties:
-      - type: OpenAPI
-        url: openapi/openapi.yml
-      - type: JSONSchema
-        url: json-schema/json-schema.yml
-      - type: JSONLD
-        url: json-ld/json-ld.yml
+- aid: google-play:google-play-androidpublisher-api
+  name: Google Play Developer Androidpublisher API
+  description: >-
+    The Androidpublisher API from Google Play Developer — 4 operation(s) for androidpublisher.
+  humanURL: https://developers.google.com/android-publisher
+  baseURL: https://androidpublisher.googleapis.com
+  tags:
+  - Androidpublisher
+  properties:
+  - type: OpenAPI
+    url: openapi/google-play-androidpublisher-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/json-schema.yml
+  - type: JSONLD
+    url: json-ld/json-ld.yml
 common:
   - type: AgenticAccess
     url: agentic-access/google-play-agentic-access.yml
