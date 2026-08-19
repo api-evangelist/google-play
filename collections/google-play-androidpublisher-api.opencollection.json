@@ -1,0 +1,117 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Google Play Developer Androidpublisher API",
+    "version": "v3"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "authorization_code",
+      "authorizationUrl": "https://accounts.google.com/o/oauth2/auth",
+      "accessTokenUrl": "https://oauth2.googleapis.com/token",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Androidpublisher",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Google Play Developer Create a new edit",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://androidpublisher.googleapis.com/androidpublisher/v3/applications/:packageName/edits",
+            "params": [
+              {
+                "name": "packageName",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Creates a new edit for an app."
+        },
+        {
+          "info": {
+            "name": "Google Play Developer List in-app products",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://androidpublisher.googleapis.com/androidpublisher/v3/applications/:packageName/inappproducts",
+            "params": [
+              {
+                "name": "packageName",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Lists all in-app products for a given app."
+        },
+        {
+          "info": {
+            "name": "Google Play Developer Get purchase status",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://androidpublisher.googleapis.com/androidpublisher/v3/applications/:packageName/purchases/products/:productId/tokens/:token",
+            "params": [
+              {
+                "name": "packageName",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "productId",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "token",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Checks the purchase and consumption status of an in-app item."
+        },
+        {
+          "info": {
+            "name": "Google Play Developer Get subscription status",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://androidpublisher.googleapis.com/androidpublisher/v3/applications/:packageName/purchases/subscriptionsv2/tokens/:token",
+            "params": [
+              {
+                "name": "packageName",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "token",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Gets the latest subscription purchase status."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,517 @@
+{
+  "item": [
+    {
+      "id": "ee0dc4be-7f1d-4839-a759-179d790030d0",
+      "name": "Androidpublisher",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "039451d5-300d-4553-8b94-e7a73ffdc051",
+          "name": "Google Play Developer Create a new edit",
+          "request": {
+            "name": "Google Play Developer Create a new edit",
+            "description": {
+              "content": "Creates a new edit for an app.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "androidpublisher",
+                "v3",
+                "applications",
+                ":packageName",
+                "edits"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "packageName",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a63d5996-eb17-4f6a-9b48-11c041e44212",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "androidpublisher",
+                    "v3",
+                    "applications",
+                    ":packageName",
+                    "edits"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "packageName",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"expiryTimeSeconds\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b2b1332c-fb6c-4899-9ac5-d77a30fa2091",
+          "name": "Google Play Developer List in-app products",
+          "request": {
+            "name": "Google Play Developer List in-app products",
+            "description": {
+              "content": "Lists all in-app products for a given app.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "androidpublisher",
+                "v3",
+                "applications",
+                ":packageName",
+                "inappproducts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "packageName",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8d8c77da-e4e5-4999-999d-1d4e81274346",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "androidpublisher",
+                    "v3",
+                    "applications",
+                    ":packageName",
+                    "inappproducts"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "packageName",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"inappproduct\": [\n    {\n      \"packageName\": \"string\",\n      \"sku\": \"string\",\n      \"status\": \"string\",\n      \"purchaseType\": \"string\",\n      \"defaultPrice\": {\n        \"priceMicros\": \"string\",\n        \"currency\": \"string\"\n      }\n    },\n    {\n      \"packageName\": \"string\",\n      \"sku\": \"string\",\n      \"status\": \"string\",\n      \"purchaseType\": \"string\",\n      \"defaultPrice\": {\n        \"priceMicros\": \"string\",\n        \"currency\": \"string\"\n      }\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a0dcc7d3-eff2-4ed9-96ac-61aca005386b",
+          "name": "Google Play Developer Get purchase status",
+          "request": {
+            "name": "Google Play Developer Get purchase status",
+            "description": {
+              "content": "Checks the purchase and consumption status of an in-app item.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "androidpublisher",
+                "v3",
+                "applications",
+                ":packageName",
+                "purchases",
+                "products",
+                ":productId",
+                "tokens",
+                ":token"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "packageName",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "productId",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "token",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "596b47d8-4f73-4943-bb9b-ee53b275e650",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "androidpublisher",
+                    "v3",
+                    "applications",
+                    ":packageName",
+                    "purchases",
+                    "products",
+                    ":productId",
+                    "tokens",
+                    ":token"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "packageName",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "productId",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "token",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"purchaseState\": 8284,\n  \"consumptionState\": 4832,\n  \"developerPayload\": \"string\",\n  \"orderId\": \"string\",\n  \"purchaseType\": 5807\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "bbb4f14a-af7f-44e5-9e99-78e3be46b6fa",
+          "name": "Google Play Developer Get subscription status",
+          "request": {
+            "name": "Google Play Developer Get subscription status",
+            "description": {
+              "content": "Gets the latest subscription purchase status.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "androidpublisher",
+                "v3",
+                "applications",
+                ":packageName",
+                "purchases",
+                "subscriptionsv2",
+                "tokens",
+                ":token"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "packageName",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "token",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d006a1db-a1c4-4529-b66d-2c35a32a95ef",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "androidpublisher",
+                    "v3",
+                    "applications",
+                    ":packageName",
+                    "purchases",
+                    "subscriptionsv2",
+                    "tokens",
+                    ":token"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "packageName",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "token",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"kind\": \"string\",\n  \"regionCode\": \"string\",\n  \"latestOrderId\": \"string\",\n  \"lineItems\": [\n    {\n      \"productId\": \"string\",\n      \"expiryTime\": \"string\"\n    },\n    {\n      \"productId\": \"string\",\n      \"expiryTime\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://androidpublisher.googleapis.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "scope",
+        "value": "https://www.googleapis.com/auth/androidpublisher"
+      },
+      {
+        "key": "accessTokenUrl",
+        "value": "https://oauth2.googleapis.com/token"
+      },
+      {
+        "key": "authUrl",
+        "value": "https://accounts.google.com/o/oauth2/auth"
+      },
+      {
+        "key": "grant_type",
+        "value": "authorization_code"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "b4b8c8d0-671f-44fd-b3dd-839a574de394",
+    "name": "Google Play Developer Androidpublisher API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The Google Play Android Developer API allows developers to perform publishing and app-management tasks. It provides access to app publishing workflows, in-app product management, subscription handling, and purchase verification.\n\nContact Support:\n Name: Google",
+      "type": "text/plain"
+    }
+  }
+}
