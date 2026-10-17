@@ -115,13 +115,6 @@ paths:
       - Androidpublisher
 components:
   schemas:
-    InAppProductList:
-      type: object
-      properties:
-        inappproduct:
-          type: array
-          items:
-            $ref: '#/components/schemas/InAppProduct'
     AppEdit:
       type: object
       properties:
@@ -131,24 +124,6 @@ components:
         expiryTimeSeconds:
           type: string
           description: The time at which the edit will expire.
-    InAppProduct:
-      type: object
-      properties:
-        packageName:
-          type: string
-        sku:
-          type: string
-        status:
-          type: string
-        purchaseType:
-          type: string
-        defaultPrice:
-          type: object
-          properties:
-            priceMicros:
-              type: string
-            currency:
-              type: string
     SubscriptionPurchaseV2:
       type: object
       properties:
@@ -167,6 +142,13 @@ components:
                 type: string
               expiryTime:
                 type: string
+    InAppProductList:
+      type: object
+      properties:
+        inappproduct:
+          type: array
+          items:
+            $ref: '#/components/schemas/InAppProduct'
     ProductPurchase:
       type: object
       properties:
@@ -180,6 +162,24 @@ components:
           type: string
         purchaseType:
           type: integer
+    InAppProduct:
+      type: object
+      properties:
+        packageName:
+          type: string
+        sku:
+          type: string
+        status:
+          type: string
+        purchaseType:
+          type: string
+        defaultPrice:
+          type: object
+          properties:
+            priceMicros:
+              type: string
+            currency:
+              type: string
   securitySchemes:
     oauth2:
       type: oauth2
