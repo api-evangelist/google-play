@@ -27,7 +27,7 @@
     - connectors/applications/google-play
     vendor_link: https://support.google.com/googleplay/android-developer/answer/6135870
     builder: Fivetran
-  status: pending-generation
+  status: not-a-workflow
   arazzo: null
 - slug: google-play-meltano
   label: Meltano
@@ -59,5 +59,5 @@
     - gold
     - silver
     builder: 'community (Meltano Hub variant maintainers: edgarrmondragon, haleemur, hotgluexyz)'
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
