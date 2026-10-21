@@ -58,11 +58,3128 @@ edges:
     builder: 'community (Meltano Hub variant maintainers: edgarrmondragon, haleemur, hotgluexyz)'
   detected_by: sweep-data-integration.py
   first_seen: '2026-10-18'
+- partner_name: Fyber
+  app: AdColony SDK
+  apps:
+  - AdColony SDK
+  - DT Exchange SDK
+  - DT FairBid SDK
+  - Fyber Offer Wall SDK
+  listing_count: 4
+  partner: adcolony
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-adcolony-sdk
+  category: mobile SDK (ads)
+  partner_url: https://adcolony.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Fyber
+    matched_domain: adcolony.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.adcolony:sdk
+    - com.fyber:fairbid-sdk
+    - com.fyber:marketplace-sdk
+    - com.fyber:offerwall-sdk
+    maven_central_groups:
+      com.adcolony: 1
+      com.fyber: 7
+    maven_repositories:
+    - Maven Central
+    categories:
+    - ads
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Adobe
+  app: Core - Experience Platform SDK
+  apps:
+  - Core - Experience Platform SDK
+  listing_count: 1
+  partner: adobe
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-adobe-marketing-mobile-core
+  category: mobile SDK (analytics, marketing-and-engagement)
+  partner_url: https://adobe.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Adobe
+    matched_domain: adobe.com
+    matched_by: domain+name-among-holders
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.adobe.marketing.mobile:core
+    maven_central_groups:
+      com.adobe.marketing.mobile: 29
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Adyen
+  app: Adyen Core Checkout Module
+  apps:
+  - Adyen Core Checkout Module
+  listing_count: 1
+  partner: adyen
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-adyen-checkout-checkout-core
+  category: mobile SDK (payments)
+  partner_url: https://adyen.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Adyen
+    matched_domain: adyen.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.adyen.checkout:checkout-core
+    maven_central_groups:
+      com.adyen.checkout: 94
+    maven_repositories:
+    - Maven Central
+    categories:
+    - payments
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Airship Group, Inc.
+  app: Airship SDK
+  apps:
+  - Airship SDK
+  - Apptimize SDK
+  listing_count: 2
+  partner: airship
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-urbanairship-android-urbanairship-fcm
+  category: mobile SDK (analytics, marketing-and-engagement)
+  partner_url: https://airship.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Airship Group, Inc.
+    matched_domain: airship.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.apptimize:apptimize-android
+    - com.urbanairship.android:urbanairship-fcm
+    maven_central_groups:
+      com.apptimize: 0
+      com.urbanairship.android: 22
+    maven_repositories:
+    - Maven Central
+    - https://maven.apptimize.com/artifactory/repo
+    categories:
+    - analytics
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Alchemer LLC
+  app: Alchemer Android SDK - Core
+  apps:
+  - Alchemer Android SDK - Core
+  - Alchemer Android SDK - Legacy
+  listing_count: 2
+  partner: alchemer
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-apptentive-apptentive-core
+  category: mobile SDK (marketing-and-engagement)
+  partner_url: https://alchemer.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Alchemer LLC
+    matched_domain: alchemer.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.apptentive:apptentive-android
+    - com.apptentive:apptentive-core
+    maven_central_groups:
+      com.apptentive: 14
+    maven_repositories:
+    - Maven Central
+    categories:
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Amazon
+  app: APS AdMob Adapter
+  apps:
+  - APS AdMob Adapter
+  - APS Android SDK
+  - AWS SDK For Android
+  - Amazon Appstore SDK
+  - Amazon IVS Player SDK
+  listing_count: 5
+  partner: amazon
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-amazon-android-aps-admob-adapter
+  category: mobile SDK (ads, data-management, marketing-and-engagement, payments)
+  partner_url: https://amazon.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Amazon
+    matched_domain: amazon.com
+    matched_by: domain+name-among-holders
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.amazon.android:aps-admob-adapter
+    - com.amazon.android:aps-sdk
+    - com.amazon.device:amazon-appstore-sdk
+    - com.amazonaws:aws-android-sdk-core
+    - com.amazonaws:ivs-player
+    maven_central_groups:
+      com.amazon.android: 56
+      com.amazon.device: 2
+      com.amazonaws: 546
+    maven_repositories:
+    - Maven Central
+    categories:
+    - ads
+    - data-management
+    - marketing-and-engagement
+    - payments
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+- partner_name: Amplitude
+  app: Amplitude Android SDK
+  apps:
+  - Amplitude Android SDK
+  listing_count: 1
+  partner: amplitude
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-amplitude-android-sdk
+  category: mobile SDK (analytics, marketing-and-engagement)
+  partner_url: https://amplitude.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Amplitude
+    matched_domain: amplitude.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.amplitude:android-sdk
+    maven_central_groups:
+      com.amplitude: 23
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: AppDynamics Inc.
+  app: AppDynamics Instrumentation Android Runtime
+  apps:
+  - AppDynamics Instrumentation Android Runtime
+  listing_count: 1
+  partner: appdynamics
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-appdynamics-appdynamics-runtime
+  category: mobile SDK (analytics)
+  partner_url: https://appdynamics.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: AppDynamics Inc.
+    matched_domain: appdynamics.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.appdynamics:appdynamics-runtime
+    maven_central_groups:
+      com.appdynamics: 6
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+- partner_name: AppLovin
+  app: AppLovin Adcolony Adapter
+  apps:
+  - AppLovin Adcolony Adapter
+  - AppLovin Alopenwrap Adapter
+  - AppLovin Amazon TAM Adapter
+  - AppLovin BidMachine Adapter
+  - AppLovin Bytedance Adapter
+  - AppLovin Chartboost Adapter
+  - AppLovin Criteo Adapter
+  - AppLovin Facebook Adapter
+  - AppLovin Fyber Adapter
+  - AppLovin Google Ad Manager Adapter
+  listing_count: 30
+  partner: applovin
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-applovin-mediation-adcolony-adapter
+  category: mobile SDK (ads)
+  partner_url: https://applovin.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: AppLovin
+    matched_domain: applovin.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.applovin.mediation:adcolony-adapter
+    - com.applovin.mediation:alopenwrapadapter
+    - com.applovin.mediation:amazon-tam-adapter
+    - com.applovin.mediation:bidmachine-adapter
+    - com.applovin.mediation:bytedance-adapter
+    - com.applovin.mediation:chartboost-adapter
+    - com.applovin.mediation:criteo-adapter
+    - com.applovin.mediation:facebook-adapter
+    - com.applovin.mediation:fyber-adapter
+    - com.applovin.mediation:google-ad-manager-adapter
+    - com.applovin.mediation:google-adapter
+    - com.applovin.mediation:hyprmx-adapter
+    maven_central_groups:
+      com.applovin: 3
+      com.applovin.mediation: 39
+    maven_repositories:
+    - Maven Central
+    - https://repo.pubmatic.com/artifactory/public-repos
+    categories:
+    - ads
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: AppsFlyer
+  app: AppsFlyer SDK
+  apps:
+  - AppsFlyer SDK
+  listing_count: 1
+  partner: appsflyer
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-appsflyer-af-android-sdk
+  category: mobile SDK (analytics, marketing-and-engagement)
+  partner_url: https://appsflyer.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: AppsFlyer
+    matched_domain: appsflyer.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.appsflyer:af-android-sdk
+    maven_central_groups:
+      com.appsflyer: 40
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Bitmovin
+  app: Bitmovin Player
+  apps:
+  - Bitmovin Player
+  listing_count: 1
+  partner: bitmovin
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-bitmovin-player-player
+  category: mobile SDK (ads, marketing-and-engagement)
+  partner_url: https://bitmovin.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Bitmovin
+    matched_domain: bitmovin.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.bitmovin.player:player
+    maven_central_groups:
+      com.bitmovin.player: 0
+    maven_repositories:
+    - https://artifacts.bitmovin.com/artifactory/public-releases
+    categories:
+    - ads
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Braintree
+  app: Braintree Card
+  apps:
+  - Braintree Card
+  - PayPal One Touch
+  listing_count: 2
+  partner: braintree
+  partner_match: domain+verified
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-braintreepayments-api-card
+  category: mobile SDK (payments, user-authentication)
+  partner_url: https://paypal.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Braintree
+    matched_domain: paypal.com
+    matched_by: domain+verified
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.braintreepayments.api:card
+    - com.paypal.android.sdk:paypal-one-touch
+    maven_central_groups:
+      com.braintreepayments.api: 27
+      com.paypal.android.sdk: 2
+    maven_repositories:
+    - Maven Central
+    categories:
+    - payments
+    - user-authentication
+    deprecated_sdks:
+    - PayPal One Touch
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Braze
+  app: Braze Android SDK
+  apps:
+  - Braze Android SDK
+  - Braze SDK (android-sdk-location)
+  listing_count: 2
+  partner: braze
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-appboy-android-sdk-ui
+  category: mobile SDK (location, marketing-and-engagement)
+  partner_url: https://braze.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Braze
+    matched_domain: braze.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.appboy:android-sdk-ui
+    - com.braze:android-sdk-location
+    maven_central_groups:
+      com.appboy: 1
+      com.braze: 7
+    maven_repositories:
+    - https://appboy.github.io/appboy-android-sdk/sdk
+    categories:
+    - location
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Brightcove
+  app: Brightcove Android SDK
+  apps:
+  - Brightcove Android SDK
+  listing_count: 1
+  partner: brightcove
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-brightcove-player-android-sdk
+  category: mobile SDK (ads)
+  partner_url: https://brightcove.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Brightcove
+    matched_domain: brightcove.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.brightcove.player:android-sdk
+    maven_central_groups:
+      com.brightcove.player: 0
+    maven_repositories:
+    - https://repo.brightcove.com/releases
+    categories:
+    - ads
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+- partner_name: BugSnag
+  app: bugsnag-android
+  apps:
+  - bugsnag-android
+  listing_count: 1
+  partner: bugsnag
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-bugsnag-bugsnag-android
+  category: mobile SDK (analytics)
+  partner_url: https://bugsnag.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: BugSnag
+    matched_domain: bugsnag.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.bugsnag:bugsnag-android
+    maven_central_groups:
+      com.bugsnag: 17
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: CleverTap
+  app: CleverTap Android SDK
+  apps:
+  - CleverTap Android SDK
+  listing_count: 1
+  partner: clevertap
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-clevertap-android-clevertap-android-sdk
+  category: mobile SDK (analytics, marketing-and-engagement)
+  partner_url: https://clevertap.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: CleverTap
+    matched_domain: clevertap.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.clevertap.android:clevertap-android-sdk
+    maven_central_groups:
+      com.clevertap.android: 9
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Comscore
+  app: Comscore Audience Measurement
+  apps:
+  - Comscore Audience Measurement
+  listing_count: 1
+  partner: comscore
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-comscore-android-analytics
+  category: mobile SDK (analytics)
+  partner_url: https://comscore.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Comscore
+    matched_domain: comscore.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.comscore:android-analytics
+    maven_central_groups:
+      com.comscore: 1
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Contentsquare
+  app: Contentsquare SDK
+  apps:
+  - Contentsquare SDK
+  listing_count: 1
+  partner: contentsquare
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-contentsquare-android-library
+  category: mobile SDK (analytics, marketing-and-engagement)
+  partner_url: https://contentsquare.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Contentsquare
+    matched_domain: contentsquare.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.contentsquare.android:library
+    maven_central_groups:
+      com.contentsquare.android: 4
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Criteo
+  app: Criteo Mraid Bridge
+  apps:
+  - Criteo Mraid Bridge
+  - Criteo Publisher SDK
+  listing_count: 2
+  partner: criteo
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-criteo-publisher-mraid-bridge
+  category: mobile SDK (ads)
+  partner_url: https://criteo.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Criteo
+    matched_domain: criteo.com
+    matched_by: domain+name-among-holders
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.criteo.publisher:criteo-publisher-sdk
+    - com.criteo.publisher:mraid-bridge
+    maven_central_groups:
+      com.criteo.publisher: 7
+    maven_repositories:
+    - Maven Central
+    categories:
+    - ads
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Datadog
+  app: Datadog SDK for Android
+  apps:
+  - Datadog SDK for Android
+  listing_count: 1
+  partner: datadog
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-datadoghq-dd-sdk-android
+  category: mobile SDK (analytics)
+  partner_url: https://datadoghq.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Datadog
+    matched_domain: datadoghq.com
+    matched_by: domain+name-among-holders
+    domain_source: data-safety link
+    maven_ids:
+    - com.datadoghq:dd-sdk-android
+    maven_central_groups:
+      com.datadoghq: 105
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Data Theorem, Inc.
+  app: Mobile Protect (TrustKit)
+  apps:
+  - Mobile Protect (TrustKit)
+  listing_count: 1
+  partner: datatheorem
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-datatheorem-android-trustkit-trustkit
+  category: mobile SDK (data-management)
+  partner_url: https://datatheorem.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Data Theorem, Inc.
+    matched_domain: datatheorem.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.datatheorem.android.trustkit:trustkit
+    maven_central_groups:
+      com.datatheorem.android.trustkit: 2
+    maven_repositories:
+    - Maven Central
+    categories:
+    - data-management
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Dynatrace
+  app: Dynatrace OneAgent SDK
+  apps:
+  - Dynatrace OneAgent SDK
+  listing_count: 1
+  partner: dynatrace
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-dynatrace-agent-agent-android
+  category: mobile SDK (analytics)
+  partner_url: https://dynatrace.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Dynatrace
+    matched_domain: dynatrace.com
+    matched_by: domain+name-among-holders
+    domain_source: data-safety link
+    maven_ids:
+    - com.dynatrace.agent:agent-android
+    maven_central_groups:
+      com.dynatrace.agent: 12
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Embrace
+  app: Embrace Android SDK
+  apps:
+  - Embrace Android SDK
+  listing_count: 1
+  partner: embrace
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/io-embrace-embrace-android-sdk
+  category: mobile SDK (analytics)
+  partner_url: https://embrace.io
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Embrace
+    matched_domain: embrace.io
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - io.embrace:embrace-android-sdk
+    maven_central_groups:
+      io.embrace: 16
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Facebook
+  app: Facebook Android SDK
+  apps:
+  - Facebook Android SDK
+  listing_count: 1
+  partner: facebook
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-facebook-android-facebook-android-sdk
+  category: mobile SDK (ads, analytics, social)
+  partner_url: https://facebook.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Facebook
+    matched_domain: facebook.com
+    matched_by: domain+name-among-holders
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.facebook.android:facebook-android-sdk
+    maven_central_groups:
+      com.facebook.android: 16
+    maven_repositories:
+    - Maven Central
+    categories:
+    - ads
+    - analytics
+    - social
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: FullStory, Inc
+  app: FullStory for Mobile Apps
+  apps:
+  - FullStory for Mobile Apps
+  listing_count: 1
+  partner: fullstory
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-fullstory-instrumentation-full
+  category: mobile SDK (analytics)
+  partner_url: https://fullstory.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: FullStory, Inc
+    matched_domain: fullstory.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.fullstory:instrumentation-full
+    maven_central_groups:
+      com.fullstory: 0
+    maven_repositories:
+    - https://maven.fullstory.com
+    categories:
+    - analytics
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: InMobi
+  app: InMobi Ads Open Measurement SDK
+  apps:
+  - InMobi Ads Open Measurement SDK
+  - InMobi Mobile Ads
+  - InMobi Mobile Ads (Old)
+  listing_count: 3
+  partner: inmobi
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-inmobi-omsdk-inmobi-omsdk
+  category: mobile SDK (ads)
+  partner_url: https://inmobi.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: InMobi
+    matched_domain: inmobi.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.inmobi.monetization:inmobi-ads
+    - com.inmobi.monetization:inmobi-ads-kotlin
+    - com.inmobi.omsdk:inmobi-omsdk
+    maven_central_groups:
+      com.inmobi.monetization: 11
+      com.inmobi.omsdk: 1
+    maven_repositories:
+    - Maven Central
+    categories:
+    - ads
+    deprecated_sdks:
+    - InMobi Mobile Ads (Old)
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: iProov
+  app: iProov Android Biometrics SDK
+  apps:
+  - iProov Android Biometrics SDK
+  listing_count: 1
+  partner: iproov
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-iproov-sdk-iproov
+  category: mobile SDK (user-authentication)
+  partner_url: https://iproov.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: iProov
+    matched_domain: iproov.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.iproov.sdk:iproov
+    maven_central_groups:
+      com.iproov.sdk: 0
+    maven_repositories:
+    - https://raw.githubusercontent.com/iProov/android/master/maven
+    categories:
+    - user-authentication
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: ironSource Mobile
+  app: Ad Quality SDK
+  apps:
+  - Ad Quality SDK
+  - Meta Audience Network Adapter
+  - Unity LevelPlay SDK
+  - ironSource
+  listing_count: 5
+  partner: ironsource
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-ironsource-adqualitysdk
+  category: mobile SDK (ads, analytics, data-management, marketing-and-engagement)
+  partner_url: https://is.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: ironSource Mobile
+    matched_domain: is.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.ironsource.adapters:facebookadapter
+    - com.ironsource.sdk:mediationsdk
+    - com.ironsource:adqualitysdk
+    - com.unity3d.ads-mediation:adquality-sdk
+    - com.unity3d.ads-mediation:mediation-sdk
+    maven_central_groups:
+      com.ironsource: 0
+      com.ironsource.adapters: 0
+      com.ironsource.sdk: 0
+      com.unity3d.ads-mediation: 26
+    maven_repositories:
+    - Maven Central
+    - https://android-sdk.is.com
+    categories:
+    - ads
+    - analytics
+    - data-management
+    - marketing-and-engagement
+    deprecated_sdks:
+    - ironSource
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Iterable
+  app: Iterable API
+  apps:
+  - Iterable API
+  listing_count: 1
+  partner: iterable
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-iterable-iterableapi
+  category: mobile SDK (data-management)
+  partner_url: https://iterable.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Iterable
+    matched_domain: iterable.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.iterable:iterableapi
+    maven_central_groups:
+      com.iterable: 37
+    maven_repositories:
+    - Maven Central
+    categories:
+    - data-management
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+- partner_name: JW Player
+  app: JW Player
+  apps:
+  - JW Player
+  listing_count: 1
+  partner: jwplayer
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-jwplayer-jwplayer-core
+  category: mobile SDK (marketing-and-engagement)
+  partner_url: https://jwplayer.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: JW Player
+    matched_domain: jwplayer.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.jwplayer:jwplayer-core
+    maven_central_groups:
+      com.jwplayer: 1
+    maven_repositories:
+    - https://mvn.jwplayer.com/content/repositories/releases
+    categories:
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+- partner_name: LaunchDarkly
+  app: LaunchDarkly SDK
+  apps:
+  - LaunchDarkly SDK
+  listing_count: 1
+  partner: launchdarkly
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-launchdarkly-launchdarkly-android-client-sdk
+  category: mobile SDK (marketing-and-engagement)
+  partner_url: https://launchdarkly.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: LaunchDarkly
+    matched_domain: launchdarkly.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.launchdarkly:launchdarkly-android-client-sdk
+    maven_central_groups:
+      com.launchdarkly: 20
+    maven_repositories:
+    - Maven Central
+    categories:
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+- partner_name: Leanplum
+  app: Leanplum SDK FCM Module
+  apps:
+  - Leanplum SDK FCM Module
+  listing_count: 1
+  partner: leanplum
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-leanplum-leanplum-fcm
+  category: mobile SDK (analytics, marketing-and-engagement)
+  partner_url: https://leanplum.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Leanplum
+    matched_domain: leanplum.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.leanplum:leanplum-fcm
+    maven_central_groups:
+      com.leanplum: 6
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: LivePerson
+  app: LivePerson Messaging SDK
+  apps:
+  - LivePerson Messaging SDK
+  listing_count: 1
+  partner: liveperson
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-liveperson-android-lp_messaging_sdk
+  category: mobile SDK (user-support)
+  partner_url: https://liveperson.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: LivePerson
+    matched_domain: liveperson.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.liveperson.android:lp_messaging_sdk
+    maven_central_groups:
+      com.liveperson.android: 9
+    maven_repositories:
+    - Maven Central
+    categories:
+    - user-support
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+- partner_name: Upland Software
+  app: Localytics
+  apps:
+  - Localytics
+  listing_count: 1
+  partner: localytics
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-localytics-androidx-library
+  category: mobile SDK (analytics, marketing-and-engagement)
+  partner_url: https://localytics.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Upland Software
+    matched_domain: localytics.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.localytics.androidx:library
+    maven_central_groups:
+      com.localytics.androidx: 0
+    maven_repositories:
+    - https://maven.localytics.com/public
+    categories:
+    - analytics
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Lokalise
+  app: Lokalise
+  apps:
+  - Lokalise
+  listing_count: 1
+  partner: lokalise
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-lokalise-android-sdk
+  category: mobile SDK (marketing-and-engagement)
+  partner_url: https://lokalise.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Lokalise
+    matched_domain: lokalise.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.lokalise.android:sdk
+    maven_central_groups:
+      com.lokalise.android: 0
+    maven_repositories:
+    - https://maven.lokalise.com
+    categories:
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+- partner_name: mercadopago.com
+  app: com.mercadopago.android.px.checkout
+  apps:
+  - com.mercadopago.android.px.checkout
+  listing_count: 1
+  partner: mercado-pago
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-mercadopago-android-px-checkout
+  category: mobile SDK (payments)
+  partner_url: https://mercadopago.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: mercadopago.com
+    matched_domain: mercadopago.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.mercadopago.android.px:checkout
+    maven_central_groups:
+      com.mercadopago.android.px: 0
+    maven_repositories:
+    - https://artifacts.mercadolibre.com/repository/android-releases
+    categories:
+    - payments
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+- partner_name: Meta Platforms, Inc.
+  app: Facebook Android SDK - Messenger
+  apps:
+  - Facebook Android SDK - Messenger
+  listing_count: 1
+  partner: meta
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-facebook-android-facebook-messenger
+  category: mobile SDK (social)
+  partner_url: https://facebook.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Meta Platforms, Inc.
+    matched_domain: facebook.com
+    matched_by: domain+name-among-holders
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.facebook.android:facebook-messenger
+    maven_central_groups:
+      com.facebook.android: 16
+    maven_repositories:
+    - Maven Central
+    categories:
+    - social
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Mixpanel
+  app: Official Mixpanel Android SDK
+  apps:
+  - Official Mixpanel Android SDK
+  listing_count: 1
+  partner: mixpanel
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-mixpanel-android-mixpanel-android
+  category: mobile SDK (analytics)
+  partner_url: https://mixpanel.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Mixpanel
+    matched_domain: mixpanel.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.mixpanel.android:mixpanel-android
+    maven_central_groups:
+      com.mixpanel.android: 5
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: MoEngage Inc
+  app: MoEngage Android SDK
+  apps:
+  - MoEngage Android SDK
+  listing_count: 1
+  partner: moengage
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-moengage-moe-android-sdk
+  category: mobile SDK (analytics, marketing-and-engagement)
+  partner_url: https://moengage.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: MoEngage Inc
+    matched_domain: moengage.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.moengage:moe-android-sdk
+    maven_central_groups:
+      com.moengage: 52
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Moloco, Inc
+  app: Moloco Android SDK
+  apps:
+  - Moloco Android SDK
+  - Moloco AppLovin Adapter
+  - Moloco Ironsource Adapter
+  - Moloco SDK
+  listing_count: 4
+  partner: moloco
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-moloco-sdk-adapters-adapter
+  category: mobile SDK (ads)
+  partner_url: https://moloco.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Moloco, Inc
+    matched_domain: moloco.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.moloco.sdk.adapters:adapter
+    - com.moloco.sdk.adapters:applovin
+    - com.moloco.sdk.adapters:ironsource
+    - com.moloco.sdk:moloco-sdk
+    maven_central_groups:
+      com.moloco.sdk: 1
+      com.moloco.sdk.adapters: 5
+    maven_repositories:
+    - Maven Central
+    categories:
+    - ads
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: MoPub (deprecated)
+  app: MoPub Android SDK
+  apps:
+  - MoPub Android SDK
+  listing_count: 1
+  partner: mopub
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-mopub-mopub-sdk
+  category: mobile SDK (ads)
+  partner_url: https://mopub.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: MoPub (deprecated)
+    matched_domain: mopub.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.mopub:mopub-sdk
+    maven_central_groups:
+      com.mopub: 11
+    maven_repositories:
+    - Maven Central
+    categories:
+    - ads
+    deprecated_sdks:
+    - MoPub Android SDK
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+  note: every listed SDK sits in the index's Deprecated SDKs section
+- partner_name: mParticle Inc
+  app: mParticle Android SDK
+  apps:
+  - mParticle Android SDK
+  listing_count: 1
+  partner: mparticle
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-mparticle-android-core
+  category: mobile SDK (analytics, data-management, marketing-and-engagement)
+  partner_url: https://mparticle.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: mParticle Inc
+    matched_domain: mparticle.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.mparticle:android-core
+    maven_central_groups:
+      com.mparticle: 64
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    - data-management
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Mux
+  app: Mux ExoPlayer
+  apps:
+  - Mux ExoPlayer
+  - Mux Stats Android SDK
+  listing_count: 2
+  partner: mux-com
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-mux-stats-sdk-muxstats-muxexoplayer_r2_16_1
+  category: mobile SDK (marketing-and-engagement)
+  partner_url: https://mux.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Mux
+    matched_domain: mux.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.mux.stats.sdk.muxstats:muxexoplayer_r2_16_1
+    - com.mux:stats.muxcore
+    maven_central_groups:
+      com.mux: 15
+      com.mux.stats.sdk.muxstats: 0
+    maven_repositories:
+    - https://muxinc.jfrog.io/artifactory/default-maven-release-local
+    categories:
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  other_publisher_names:
+  - mux.com
+- partner_name: New Relic
+  app: New Relic Mobile for Android
+  apps:
+  - New Relic Mobile for Android
+  listing_count: 1
+  partner: new-relic
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-newrelic-agent-android-android-agent
+  category: mobile SDK (analytics)
+  partner_url: https://newrelic.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: New Relic
+    matched_domain: newrelic.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.newrelic.agent.android:android-agent
+    maven_central_groups:
+      com.newrelic.agent.android: 6
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: ObjectBox
+  app: Android Database
+  apps:
+  - Android Database
+  listing_count: 1
+  partner: objectbox
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/io-objectbox-objectbox-android
+  category: mobile SDK (data-management)
+  partner_url: https://objectbox.io
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: ObjectBox
+    matched_domain: objectbox.io
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - io.objectbox:objectbox-android
+    maven_central_groups:
+      io.objectbox: 27
+    maven_repositories:
+    - Maven Central
+    categories:
+    - data-management
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: OneSignal
+  app: OneSignal
+  apps:
+  - OneSignal
+  listing_count: 1
+  partner: onesignal
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-onesignal-onesignal
+  category: mobile SDK (analytics, marketing-and-engagement)
+  partner_url: https://onesignal.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: OneSignal
+    matched_domain: onesignal.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.onesignal:onesignal
+    maven_central_groups:
+      com.onesignal: 5
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: OneTrust
+  app: OneTrust Native SDK
+  apps:
+  - OneTrust Native SDK
+  listing_count: 1
+  partner: onetrust
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-onetrust-cmp-native-sdk
+  category: mobile SDK (data-management)
+  partner_url: https://onetrust.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: OneTrust
+    matched_domain: onetrust.com
+    matched_by: domain+name-among-holders
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.onetrust.cmp:native-sdk
+    maven_central_groups:
+      com.onetrust.cmp: 2
+    maven_repositories:
+    - Maven Central
+    categories:
+    - data-management
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+- partner_name: Onfido
+  app: Onfido Smart Capture SDK
+  apps:
+  - Onfido Smart Capture SDK
+  listing_count: 1
+  partner: onfido
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-onfido-sdk-capture-onfido-capture-sdk
+  category: mobile SDK (user-authentication)
+  partner_url: https://onfido.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Onfido
+    matched_domain: onfido.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.onfido.sdk.capture:onfido-capture-sdk
+    maven_central_groups:
+      com.onfido.sdk.capture: 3
+    maven_repositories:
+    - Maven Central
+    categories:
+    - user-authentication
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Optimizely
+  app: Optimizely Android SDK
+  apps:
+  - Optimizely Android SDK
+  listing_count: 1
+  partner: optimizely
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-optimizely-ab-android-sdk
+  category: mobile SDK (analytics)
+  partner_url: https://optimizely.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Optimizely
+    matched_domain: optimizely.com
+    matched_by: domain+name-among-holders
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.optimizely.ab:android-sdk
+    maven_central_groups:
+      com.optimizely.ab: 9
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+- partner_name: Paytm
+  app: Paytm All-in-One Payments SDK
+  apps:
+  - Paytm All-in-One Payments SDK
+  - com.paytm.easypay:easypay
+  listing_count: 2
+  partner: paytm
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-paytm-appinvokesdk-appinvokesdk
+  category: mobile SDK (payments)
+  partner_url: https://paytm.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Paytm
+    matched_domain: paytm.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.paytm.appinvokesdk:appinvokesdk
+    - com.paytm.easypay:easypay
+    maven_central_groups:
+      com.paytm.appinvokesdk: 0
+      com.paytm.easypay: 0
+    maven_repositories:
+    - https://artifactory.paytm.in/libs-release-local
+    categories:
+    - payments
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+  other_publisher_names:
+  - paytm.com
+- partner_name: Permutive
+  app: Permutive Android
+  apps:
+  - Permutive Android
+  listing_count: 1
+  partner: permutive
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-permutive-android-core
+  category: mobile SDK (ads)
+  partner_url: https://permutive.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Permutive
+    matched_domain: permutive.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.permutive.android:core
+    maven_central_groups:
+      com.permutive.android: 7
+    maven_repositories:
+    - Maven Central
+    categories:
+    - ads
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+- partner_name: Plaid
+  app: Link Android SDK
+  apps:
+  - Link Android SDK
+  listing_count: 1
+  partner: plaid
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-plaid-link-sdk-core
+  category: mobile SDK (payments)
+  partner_url: https://plaid.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Plaid
+    matched_domain: plaid.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.plaid.link:sdk-core
+    maven_central_groups:
+      com.plaid.link: 1
+    maven_repositories:
+    - Maven Central
+    categories:
+    - payments
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Pollfish
+  app: Pollfish
+  apps:
+  - Pollfish
+  listing_count: 1
+  partner: pollfish
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-pollfish-pollfish-googleplay
+  category: mobile SDK (ads)
+  partner_url: https://pollfish.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Pollfish
+    matched_domain: pollfish.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.pollfish:pollfish-googleplay
+    maven_central_groups:
+      com.pollfish: 6
+    maven_repositories:
+    - Maven Central
+    categories:
+    - ads
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: PubMatic
+  app: PubMatic IAB SDK
+  apps:
+  - PubMatic IAB SDK
+  - PubMatic OpenWrap SDK
+  listing_count: 2
+  partner: pubmatic
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-pubmatic-sdk-iab-omsdk
+  category: mobile SDK (ads)
+  partner_url: https://pubmatic.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: PubMatic
+    matched_domain: pubmatic.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.pubmatic.sdk:iab-omsdk
+    - com.pubmatic.sdk:openwrap
+    maven_central_groups:
+      com.pubmatic.sdk: 0
+    maven_repositories:
+    - https://repo.pubmatic.com/artifactory/public-repos
+    categories:
+    - ads
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: PubNub
+  app: PubNub SDK
+  apps:
+  - PubNub SDK
+  listing_count: 1
+  partner: pubnub
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-pubnub-pubnub-gson
+  category: mobile SDK (marketing-and-engagement)
+  partner_url: https://pubnub.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: PubNub
+    matched_domain: pubnub.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.pubnub:pubnub-gson
+    maven_central_groups:
+      com.pubnub: 56
+    maven_repositories:
+    - Maven Central
+    categories:
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+- partner_name: Qualtrics
+  app: Qualtrics Website/App Feedback Android SDK
+  apps:
+  - Qualtrics Website/App Feedback Android SDK
+  listing_count: 1
+  partner: qualtrics
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-qualtrics-digital
+  category: mobile SDK (analytics)
+  partner_url: https://qualtrics.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Qualtrics
+    matched_domain: qualtrics.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.qualtrics:digital
+    maven_central_groups:
+      com.qualtrics: 0
+    maven_repositories:
+    - https://s3-us-west-2.amazonaws.com/si-mobile-sdks/android
+    categories:
+    - analytics
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Razorpay Software Pvt Ltd
+  app: Razorpay Android CustomUI SDK
+  apps:
+  - Razorpay Android CustomUI SDK
+  - Razorpay Standard Checkout
+  listing_count: 2
+  partner: razorpay
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-razorpay-customui
+  category: mobile SDK (payments)
+  partner_url: https://razorpay.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Razorpay Software Pvt Ltd
+    matched_domain: razorpay.com
+    matched_by: domain+name-among-holders
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.razorpay:checkout
+    - com.razorpay:customui
+    maven_central_groups:
+      com.razorpay: 10
+    maven_repositories:
+    - Maven Central
+    categories:
+    - payments
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: RevenueCat
+  app: RevenueCat
+  apps:
+  - RevenueCat
+  listing_count: 1
+  partner: revenuecat
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-revenuecat-purchases-purchases
+  category: mobile SDK (payments)
+  partner_url: https://revenuecat.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: RevenueCat
+    matched_domain: revenuecat.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.revenuecat.purchases:purchases
+    maven_central_groups:
+      com.revenuecat.purchases: 63
+    maven_repositories:
+    - Maven Central
+    categories:
+    - payments
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Salesforce
+  app: Marketing Cloud Engagement SDK
+  apps:
+  - Marketing Cloud Engagement SDK
+  - com.salesforce.service:case-ui
+  - com.salesforce.service:chat-ui
+  listing_count: 3
+  partner: salesforce
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-salesforce-marketingcloud-marketingcloudsdk
+  category: mobile SDK (user-support)
+  partner_url: https://salesforce.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Salesforce
+    matched_domain: salesforce.com
+    matched_by: domain+name-among-holders
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.salesforce.marketingcloud:marketingcloudsdk
+    - com.salesforce.service:case-ui
+    - com.salesforce.service:chat-ui
+    maven_central_groups:
+      com.salesforce.marketingcloud: 0
+      com.salesforce.service: 0
+    maven_repositories:
+    - https://s3.amazonaws.com/salesforcesos.com/android/maven/release
+    - https://salesforce-marketingcloud.github.io/MarketingCloudSDK-Android/repository
+    categories:
+    - user-support
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+  other_publisher_names:
+  - salesforce.com
+- partner_name: Twilio-Segment
+  app: Segment Analytics Android
+  apps:
+  - Segment Analytics Android
+  listing_count: 1
+  partner: segment
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-segment-analytics-android-analytics
+  category: mobile SDK (analytics, marketing-and-engagement)
+  partner_url: https://segment.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Twilio-Segment
+    matched_domain: segment.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.segment.analytics.android:analytics
+    maven_central_groups:
+      com.segment.analytics.android: 27
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Sendbird
+  app: Sendbird Chat SDK
+  apps:
+  - Sendbird Chat SDK
+  - Sendbird UIKit
+  listing_count: 2
+  partner: sendbird
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-sendbird-sdk-sendbird-android-sdk
+  category: mobile SDK (marketing-and-engagement, social)
+  partner_url: https://sendbird.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Sendbird
+    matched_domain: sendbird.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.sendbird.sdk:sendbird-android-sdk
+    - com.sendbird.sdk:uikit
+    maven_central_groups:
+      com.sendbird.sdk: 0
+    maven_repositories:
+    - https://repo.sendbird.com/public/maven
+    categories:
+    - marketing-and-engagement
+    - social
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: SensorsData
+  app: SensorsAnalyticsSDK
+  apps:
+  - SensorsAnalyticsSDK
+  listing_count: 1
+  partner: sensors-data
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-sensorsdata-analytics-android-sensorsanalyticssdk
+  category: mobile SDK (analytics)
+  partner_url: https://sensorsdata.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: SensorsData
+    matched_domain: sensorsdata.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.sensorsdata.analytics.android:sensorsanalyticssdk
+    maven_central_groups:
+      com.sensorsdata.analytics.android: 37
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Sentry
+  app: Sentry Android
+  apps:
+  - Sentry Android
+  listing_count: 1
+  partner: sentry-system
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/io-sentry-sentry-android
+  category: mobile SDK (analytics)
+  partner_url: https://sentry.io
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Sentry
+    matched_domain: sentry.io
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - io.sentry:sentry-android
+    maven_central_groups:
+      io.sentry: 70
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Singular
+  app: Singular SDK
+  apps:
+  - Singular SDK
+  listing_count: 1
+  partner: singular
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-singular-sdk-singular_sdk
+  category: mobile SDK (analytics, marketing-and-engagement)
+  partner_url: https://singular.net
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Singular
+    matched_domain: singular.net
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.singular.sdk:singular_sdk
+    maven_central_groups:
+      com.singular.sdk: 0
+    maven_repositories:
+    - https://maven.singular.net
+    categories:
+    - analytics
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Snap Inc
+  app: Ad Kit
+  apps:
+  - Ad Kit
+  - Creative Kit
+  listing_count: 2
+  partner: snap
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-snap-adkit-adkit
+  category: mobile SDK (ads, marketing-and-engagement, social)
+  partner_url: https://snap.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Snap Inc
+    matched_domain: snap.com
+    matched_by: domain+name-among-holders
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.snap.adkit:adkit
+    - com.snapchat.kit.sdk:creative
+    maven_central_groups:
+      com.snap.adkit: 1
+      com.snapchat.kit.sdk: 0
+    maven_repositories:
+    - Maven Central
+    - https://storage.googleapis.com/snap-kit-build/maven
+    categories:
+    - ads
+    - marketing-and-engagement
+    - social
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Snowplow Technologies
+  app: Snowplow Android Tracker
+  apps:
+  - Snowplow Android Tracker
+  listing_count: 1
+  partner: snowplow
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-snowplowanalytics-snowplow-android-tracker
+  category: mobile SDK (analytics, marketing-and-engagement)
+  partner_url: https://snowplow.io
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Snowplow Technologies
+    matched_domain: snowplow.io
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.snowplowanalytics:snowplow-android-tracker
+    maven_central_groups:
+      com.snowplowanalytics: 115
+    maven_repositories:
+    - Maven Central
+    categories:
+    - analytics
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Sourcepoint
+  app: Sourcepoint CMP
+  apps:
+  - Sourcepoint CMP
+  listing_count: 1
+  partner: sourcepoint
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-sourcepoint-cmplibrary-cmplibrary
+  category: mobile SDK (data-management)
+  partner_url: https://sourcepoint.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Sourcepoint
+    matched_domain: sourcepoint.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.sourcepoint.cmplibrary:cmplibrary
+    maven_central_groups:
+      com.sourcepoint.cmplibrary: 1
+    maven_repositories:
+    - Maven Central
+    categories:
+    - data-management
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Stripe
+  app: Stripe Android SDK
+  apps:
+  - Stripe Android SDK
+  listing_count: 1
+  partner: stripe
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-stripe-stripe-android
+  category: mobile SDK (payments)
+  partner_url: https://stripe.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Stripe
+    matched_domain: stripe.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.stripe:stripe-android
+    maven_central_groups:
+      com.stripe: 110
+    maven_repositories:
+    - Maven Central
+    categories:
+    - payments
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Taboola
+  app: Taboola SDK
+  apps:
+  - Taboola SDK
+  listing_count: 1
+  partner: taboola
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-taboola-android-sdk
+  category: mobile SDK (ads)
+  partner_url: https://taboola.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Taboola
+    matched_domain: taboola.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.taboola:android-sdk
+    maven_central_groups:
+      com.taboola: 11
+    maven_repositories:
+    - https://taboolapublic.jfrog.io/artifactory/mobile-release
+    categories:
+    - ads
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Tealium Inc.
+  app: Tealium Android Java SDK
+  apps:
+  - Tealium Android Java SDK
+  listing_count: 1
+  partner: tealium
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-tealium-library
+  category: mobile SDK (analytics, data-management, location, marketing-and-engagement)
+  partner_url: https://tealium.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Tealium Inc.
+    matched_domain: tealium.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.tealium:library
+    maven_central_groups:
+      com.tealium: 0
+    maven_repositories:
+    - https://maven.tealiumiq.com/android/releases
+    categories:
+    - analytics
+    - data-management
+    - location
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Truecaller for Developers
+  app: Truecaller SDK
+  apps:
+  - Truecaller SDK
+  listing_count: 1
+  partner: truecaller
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-truecaller-android-sdk-truecaller-sdk
+  category: mobile SDK (user-authentication)
+  partner_url: https://truecaller.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Truecaller for Developers
+    matched_domain: truecaller.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.truecaller.android.sdk:truecaller-sdk
+    maven_central_groups:
+      com.truecaller.android.sdk: 1
+    maven_repositories:
+    - Not available
+    categories:
+    - user-authentication
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+- partner_name: Unity Technologies
+  app: Unity Ads
+  apps:
+  - Unity Ads
+  listing_count: 1
+  partner: unity
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-unity3d-ads-unity-ads
+  category: mobile SDK (ads)
+  partner_url: https://unity.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Unity Technologies
+    matched_domain: unity.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.unity3d.ads:unity-ads
+    maven_central_groups:
+      com.unity3d.ads: 1
+    maven_repositories:
+    - Maven Central
+    categories:
+    - ads
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Usercentrics Consent Management Platform (CMP)
+  app: Usercentrics
+  apps:
+  - Usercentrics
+  listing_count: 1
+  partner: usercentrics
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-usercentrics-sdk-usercentrics
+  category: mobile SDK (data-management)
+  partner_url: https://usercentrics.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Usercentrics Consent Management Platform (CMP)
+    matched_domain: usercentrics.com
+    matched_by: domain+name-among-holders
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.usercentrics.sdk:usercentrics
+    maven_central_groups:
+      com.usercentrics.sdk: 5
+    maven_repositories:
+    - Maven Central
+    categories:
+    - data-management
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: UXCam
+  app: UXCam
+  apps:
+  - UXCam
+  listing_count: 1
+  partner: uxcam
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-uxcam-uxcam
+  category: mobile SDK (analytics, marketing-and-engagement)
+  partner_url: https://uxcam.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: UXCam
+    matched_domain: uxcam.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.uxcam:uxcam
+    maven_central_groups:
+      com.uxcam: 0
+    maven_repositories:
+    - https://sdk.uxcam.com/android
+    categories:
+    - analytics
+    - marketing-and-engagement
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: vk.com
+  app: VK API library
+  apps:
+  - VK API library
+  listing_count: 1
+  partner: vk
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-vk-android-sdk-core
+  category: mobile SDK (social)
+  partner_url: https://vk.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: vk.com
+    matched_domain: vk.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.vk:android-sdk-core
+    maven_central_groups:
+      com.vk: 6
+    maven_repositories:
+    - Maven Central
+    categories:
+    - social
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+- partner_name: Vungle
+  app: Liftoff Monetize - Vungle Android SDK
+  apps:
+  - Liftoff Monetize - Vungle Android SDK
+  - Liftoff Monetize - Vungle Android SDK v7
+  listing_count: 2
+  partner: vungle
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-vungle-publisher-sdk-android
+  category: mobile SDK (ads)
+  partner_url: https://vungle.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Vungle
+    matched_domain: vungle.com
+    matched_by: domain
+    domain_source: data-safety link
+    maven_ids:
+    - com.vungle:publisher-sdk-android
+    - com.vungle:vungle-ads
+    maven_central_groups:
+      com.vungle: 2
+    maven_repositories:
+    - Maven Central
+    categories:
+    - ads
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
+  publisher_verified:
+  - Registered in Google Play SDK Console
+- partner_name: Yubico
+  app: Yubico SDK
+  apps:
+  - Yubico SDK
+  listing_count: 1
+  partner: yubico
+  partner_match: domain
+  type: marketplace
+  marketplace: Google Play SDK Index
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://play.google.com/sdks/details/com-yubico-yubikit-piv
+  category: mobile SDK (user-authentication)
+  partner_url: https://yubico.com
+  contract_reference:
+    register: Google Play SDK Index (play.google.com/sdks)
+    spec_file: null
+    registered_name: Yubico
+    matched_domain: yubico.com
+    matched_by: domain
+    domain_source: Maven groupId (reverse domain)
+    maven_ids:
+    - com.yubico.yubikit:piv
+    maven_central_groups:
+      com.yubico.yubikit: 13
+    maven_repositories:
+    - Maven Central
+    categories:
+    - user-authentication
+    deprecated_sdks: []
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  signal_note: Google Play SDK Index listing; SDK names, Maven IDs, categories and counts are context, never counted;
+    SDK Console registration is a publisher badge (weight 0)
+  detected_by: sweep-mobile-sdk-index.py
+  detected: '2026-10-21'
 method: searched
 checked:
 - https://fivetran.com/docs-sitemap.xml
 - https://fivetran.com/docs/connectors/partner-built-program
 - https://github.com/meltano/hub
+- https://cdn.cocoapods.org/all_pods.txt
+- https://cert.appdefensealliance.org/certifications
+- https://play.google.com/sdks
+- https://search.maven.org/solrsearch/select
 source:
 - https://fivetran.com/docs-sitemap.xml
 - https://fivetran.com/docs/connectors/partner-built-program
