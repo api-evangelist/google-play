@@ -1,4 +1,4 @@
-# Google Play Developer (google-play)
+# Google Play Developer
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,49 +66,129 @@
 
 The Google Play Developer API allows developers to perform publishing and app-management tasks for Android applications. It includes the Publishing API for uploading and distributing apps, and the Subscriptions and In-App Purchases API for managing in-app products, subscriptions, and purchase verification.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/google-play/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/google-play/refs/heads/main/apis.yml)
+**Areas:** Android · Application · Google Play · In-App Purchases · Mobile · Publishing · Subscription
 
-## Tags
+## Google Play Developer on APIs.io
 
-- Android
-- Apps
-- Google Play
-- In-App Purchases
-- Mobile
-- Publishing
-- Subscriptions
+Everything profiled for Google Play Developer is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/google-play/](https://apis.io/providers/google-play/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (1)
 
-- **Created:** 2026-03-13
-- **Modified:** 2026-05-19
+- [Google Play Developer Androidpublisher API](https://apis.io/apis/google-play/google-play-androidpublisher-api/) — The Androidpublisher API from Google Play Developer — 4 operation(s) for androidpublisher.
 
-## APIs
+### Published properties
 
-### Google Play Developer API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-The Google Play Android Developer API provides programmatic access to publishing and app-management tasks including uploading APKs, managing in-app products, handling subscriptions, and verifying purchases.
+#### Agentic access (1)
 
-- **Human URL:** [https://developers.google.com/android-publisher](https://developers.google.com/android-publisher)
-- **Base URL:** `https://androidpublisher.googleapis.com`
+Which operations an agent can call, which act, and which need a human in the loop.
 
-#### Properties
+- [Google Play Agentic Access](https://apis.io/agentic-access/google-play/google-play-agentic-access/)
 
-- [OpenAPI](openapi/openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/openapi.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/openapi.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [JSON Schema](json-schema/json-schema.yml) — [JSON Schema](https://json-schema.org/specification)
-- [JSON-LD](json-ld/json-ld.yml) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
+#### Collections (2)
 
-## Common Properties
+Postman and Open Collection request collections.
 
-- [GitHub Organization](https://github.com/google)
-- [LinkedIn](https://www.linkedin.com/company/google-play)
-- [Getting Started](https://developers.google.com/android-publisher/getting_started)
+- [Google Play Developer Androidpublisher API](https://apis.io/collections/google-play/open-google-play-androidpublisher-api/)
+- [Google Play Developer API](https://apis.io/collections/google-play/open-openapi/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Google Play Developer — jsonschema rules](https://apis.io/rules/google-play/google-play-jsonschema-spectral-rules/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Google Play Authentication](https://apis.io/security/google-play/google-play-authentication/)
+- [Google Play Domain Security](https://apis.io/security/google-play/google-play-domain-security/)
+- [Google Play Vulnerability Disclosure](https://apis.io/security/google-play/google-play-vulnerability-disclosure/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Google Play Scopes](https://apis.io/scopes/google-play/google-play-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Google Play Plans Pricing](https://apis.io/plans/google-play/google-play-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Google Play Rate Limits](https://apis.io/rate-limits/google-play/google-play-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Google Play Finops](https://apis.io/finops/google-play/google-play-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.google.com/)
+- [Getting started](https://developers.google.com/android-publisher/getting_started)
 - [Pricing](https://play.google.com/console/about/pricing/)
-- [JSON-LD](json-ld/json-ld.yml) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
+- [GitHub](https://github.com/google)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 30.3** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 54.5 |
+| Contract governance | 9.8 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 7.9 |
+
+**Agent readiness 22.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | negotiable (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | documented (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 27.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/google-play/](https://apis.io/providers/google-play/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Google Play Developer: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/google-play/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
